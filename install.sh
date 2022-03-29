@@ -10,7 +10,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 apt-cache policy docker-ce
 
-sudo apt install docker-ce
+sudo apt install docker-ce -y
 
 sudo systemctl status docker
 
@@ -20,6 +20,6 @@ USER=ravuthz
 sudo usermod -aG docker ${USER}
 su - ${USER}
 groups
-sudo usermod -aG docker username
+sudo usermod -aG docker ${USER}
 
 docker
