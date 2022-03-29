@@ -18,8 +18,8 @@ sudo systemctl status docker
 USER=ravuthz
 
 sudo usermod -aG docker ${USER}
-su - ${USER}
-groups
-sudo usermod -aG docker ${USER}
+# su - ${USER}
+# groups
+# sudo usermod -aG docker ${USER}
 
 docker
